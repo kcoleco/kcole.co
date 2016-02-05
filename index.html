@@ -7,23 +7,69 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="Kevin Coleman is a Web & Graphic Designer out of Southern California.">
     <title>Kevin Coleman :: Web & Graphic Designer</title>
+    <!-- Fun fact: This website has been hand-coded by Kevin Coleman using the Bootstrap framework. -->
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      min-height: 2000px;
+      padding-top: 70px;
+      margin-bottom: 60px;
+    }
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    span.test {
+      display: block;
+      background: #f6f6f6;
+      padding: 15px;
+      margin-bottom: 30px;
+      height: 300px;
+    }
+
+    span.test h1 {
+      text-transform: uppercase;
+      font-size: 24px;
+      text-align: center;
+      font-weight: bold;
+      color: #555;
+      margin-top: 100px;
+    }
+
+    span.test p {
+      text-align: center;
+      text-transform: uppercase;
+      color: #555;
+      font-size: 10px;
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      /* Set the fixed height of the footer here */
+      height: 60px;
+      background-color: #f5f5f5;
+    }
+
+    .container-fluid .text-muted {
+      margin: 20px 0;
+    }
+    </style>
   </head>
+
   <body>
   	<nav class="navbar navbar-default navbar-fixed-top">
   		<div class="container">
-  		<!-- Brand and toggle get grouped for better mobile display -->
-  			<div class="navbar-header">
-  				<a class="navbar-brand" href="#">kcole.co</a>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">kcole.co</a>
   			</div>
   			<div id="navbar" class="navbar-collapse collapse">
   				<ul class="nav navbar-nav">
@@ -35,6 +81,36 @@
   			</div>
   		</div>
   	</nav>
+
+    <!-- Start Body Content -->
+    <div class="container-fluid">
+        <h1><center>Portfolio Test</center></h1>
+        <p><center>This is a test! Let's see how this works. Thanks for checking out the website!</center></p>
+          <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <span class="test">
+                <h1>Portfolio Item Title</h1>
+                <p>Design, Type</p>
+              </span>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12"><span class="test"><h1>Portfolio Item Title</h1></span></div>
+            <div class="col-md-3 col-sm-6 col-xs-12"><span class="test"><h1>Portfolio Item Title</h1></span></div>
+            <div class="col-md-3 col-sm-6 col-xs-12"><span class="test"><h1>Portfolio Item Title</h1></span></div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12"><span class="test"><h1>Portfolio Item Title</h1></span></div>
+            <div class="col-md-3 col-sm-6 col-xs-12"><span class="test"><h1>Portfolio Item Title</h1></span></div>
+            <div class="col-md-3 col-sm-6 col-xs-12"><span class="test"><h1>Portfolio Item Title</h1></span></div>
+            <div class="col-md-3 col-sm-6 col-xs-12"><span class="test"><h1>Portfolio Item Title</h1></span></div>
+
+          </div>
+    </div>
+    <!-- End Body Content -->
+
+    <footer class="footer">
+      <div class="container-fluid">
+        <p class="text-muted"><center>Copyright 2016 :: Kevin Coleman</center></p>
+      </div>
+    </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.min.js"></script>
