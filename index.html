@@ -11,52 +11,9 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-    <style>
-    body {
-      font-family: 'Open Sans', sans-serif;
-      min-height: 2000px;
-      padding-top: 70px;
-      margin-bottom: 60px;
-    }
-
-    span.test {
-      display: block;
-      background: #f6f6f6;
-      padding: 15px;
-      margin-bottom: 30px;
-      height: 300px;
-    }
-
-    span.test h1 {
-      text-transform: uppercase;
-      font-size: 24px;
-      text-align: center;
-      font-weight: bold;
-      color: #555;
-      margin-top: 100px;
-    }
-
-    span.test p {
-      text-align: center;
-      text-transform: uppercase;
-      color: #555;
-      font-size: 10px;
-    }
-
-    .footer {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      /* Set the fixed height of the footer here */
-      height: 60px;
-      background-color: #f5f5f5;
-    }
-
-    .container-fluid .text-muted {
-      margin: 20px 0;
-    }
-    </style>
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,700' rel='stylesheet' type='text/css'>
   </head>
 
   <body>
@@ -69,46 +26,77 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">kcole.co</a>
+          <a class="navbar-brand" href="#"><i class="fa fa-reddit-alien"></i> <strong>KCOLE</strong></a>
   			</div>
   			<div id="navbar" class="navbar-collapse collapse">
   				<ul class="nav navbar-nav">
-  					<li><a href="#">Home</a></li>
-  					<li><a href="#">Work</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a style="font-weight: 700;" href="#">Contact</a></li>
+				  </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="http://www.instagram.com/kcole.co"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="http://www.twitter.com/kcole_co"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="http://www.dribbble.com/kcoleman3"><i class="fa fa-dribbble"></i></a></li>
+            <li><a href="http://www.github.com/kcoleco"><i class="fa fa-github"></i></a></li>
+          </ul>
   			</div>
   		</div>
   	</nav>
 
     <!-- Start Body Content -->
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Hello there.<br/>My name is Kevin Coleman.</h1>
+        <p>I am a graphic &amp; web designer, based out of Southern California. <br/>While you're here: check out my <a href="#">work</a>, read my <a href="#">blog</a>, or shoot me a <a href="#">message</a>. <br/>
+        <a class="btn btn-kcole btn-md" href="#" role="button">Contact</a></p>
+      </div>
+      <div style="text-align: center; color: #e6e6e6;"><i class="fa fa-angle-down fa-5x"></i></div>
+    </div>
     <div class="container-fluid">
-        <h1><center>Portfolio Test</center></h1>
-        <p><center>This is a test! Let's see how this works. Thanks for checking out the website!</center></p>
-          <div class="row">
-            <div class="col-md-3 col-sm-6 col-xs-12">
-              <span class="test">
-                <h1>Portfolio Item Title</h1>
-                <p>Design, Type</p>
-              </span>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12"><span class="test"><h1>Portfolio Item Title</h1></span></div>
-            <div class="col-md-3 col-sm-6 col-xs-12"><span class="test"><h1>Portfolio Item Title</h1></span></div>
-            <div class="col-md-3 col-sm-6 col-xs-12"><span class="test"><h1>Portfolio Item Title</h1></span></div>
-
-            <div class="col-md-3 col-sm-6 col-xs-12"><span class="test"><h1>Portfolio Item Title</h1></span></div>
-            <div class="col-md-3 col-sm-6 col-xs-12"><span class="test"><h1>Portfolio Item Title</h1></span></div>
-            <div class="col-md-3 col-sm-6 col-xs-12"><span class="test"><h1>Portfolio Item Title</h1></span></div>
-            <div class="col-md-3 col-sm-6 col-xs-12"><span class="test"><h1>Portfolio Item Title</h1></span></div>
-
+      <div class="row">
+        <h3 style="text-align:center; margin-bottom: 30px; font-weight: 100;">FEATURED WORK</h3>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <div class="hovereffect">
+            <img src="https://static.pexels.com/photos/5029/road-nature-street-curve-large.jpeg" class="img-thumbnail img-responsive" alt="A generic square">
+              <a href="#"><div class="overlay">
+                <h2>City Grounds</h2>
+                  <p>Design &bull; Photography</p>
+                  <center><a class="btn btn-kcole btn-md" href="#" role="button">View <i class="fa fa-angle-right"></i></a></center>
+              </div></a>
           </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <div class="hovereffect">
+            <img src="https://static.pexels.com/photos/8211/wood-shoes-floor-belt-large.jpg" class="img-thumbnail img-responsive" alt="A generic square">
+              <a href="#"><div class="overlay">
+                <h2>Crew Bike Co.</h2>
+                  <p>Design &bull; Photography</p>
+                  <center><a class="btn btn-kcole btn-md" href="#" role="button">View <i class="fa fa-angle-right"></i></a></center>
+              </div></a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <div class="hovereffect">
+            <img src="https://static.pexels.com/photos/7974/pexels-photo-large.jpg" class="img-thumbnail img-responsive" alt="A generic square">
+              <a href="#"><div class="overlay">
+                <h2>Logo Design</h2>
+                  <p>Design &bull; Photography</p>
+                  <center><a class="btn btn-kcole btn-md" href="#" role="button">View <i class="fa fa-angle-right"></i></a></center>
+              </div></a>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- End Body Content -->
 
     <footer class="footer">
       <div class="container-fluid">
-        <p class="text-muted"><center>Copyright 2016 :: Kevin Coleman</center></p>
+        <p><center>Copyright 2016 :: Kevin Coleman</center></p>
       </div>
     </footer>
 
