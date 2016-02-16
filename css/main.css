@@ -1,3 +1,5 @@
+/* CORE STYLES */
+
 body {
       font-family: "Roboto", serif;
       min-height: 2000px;
@@ -7,7 +9,7 @@ body {
 }
 
 .row {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 a {
@@ -19,60 +21,41 @@ a:hover {
   color: #333;
 }
 
-.jumbotron {
-  background-color: #f6f6f6;
-  padding-top: 120px;
-  padding-bottom: 120px;
-  margin-bottom: 15px;
-}
-
-.jumbotron h1 {
-  color: #333;
-  font-size: 52px;
-  line-height: 80px;
-  text-align: left;
-  font-weight: 100;
-}
-
-.jumbotron p {
-  color: #666;
-  text-align: left;
-  line-height: 60px;
-}
-
-.img-thumbnail {
-  padding: 0px;
-  border: none;
-  border-radius:0;
-  -webkit-transition: none;
-  transition: none;
-}
-
-.container-fluid {
-  padding-left: 30px;
-  padding-right:30px;
-}
-
-.footer {
-  margin-top: 50px;
-}
-
 .btn {
   border-radius: 0px;
 }
 
 .btn-kcole {
-  color: white;
-  background-color: #999;
-  border: 0px;
+  color: #39CEBB;
+  background-color: transparent;
+  border: 1px solid #39CEBB;
   padding: 10px 20px;
   font-weight: 400;
   text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.btn-kcoleReverse {
+  color: white;
+  background-color: #39CEBB;
+  border: 1px solid #39CEBB;
+  padding: 10px 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 2px;
 }
 
 .btn:hover {
-  color: #39CEBB;
-  background-color: #333;
+  color: white;
+  background-color: #39CEBB;
+}
+
+.btn-kcoleReverse:hover {
+  color: white;
+  border: 1px solid #2FB1A0;
+  background-color: #2FB1A0;
 }
 
 .label-kcole {
@@ -81,6 +64,31 @@ a:hover {
   font-weight: normal;
   text-transform: uppercase;
 }
+
+.container-fluid {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.container-fluid#quoteContainer {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+#quoteBox {
+  background-color: #39CEBB;
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#quoteBox h3 {
+  font-weight: 100;
+  font-size: 30px;
+}
+
+/* NAVBAR */
 
 .navbar-default {
   background-color: #fff;
@@ -99,11 +107,38 @@ a:hover {
   color: #b6b6b6;
 }
 
-.btn-contactMe {
-  font-weight: 100;
-  color: white;
+/* MAIN CAROUSEL */
+
+.jumbotron {
   background-color: #f6f6f6;
-  padding: 5px 10px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  margin-bottom: 30px;
+}
+
+.jumbotron h1 {
+  color: #333;
+  font-size: 60px;
+  line-height: 80px;
+  text-align: left;
+  font-weight: 100;
+}
+
+.jumbotron p {
+  color: #666;
+  text-align: left;
+  line-height: 60px;
+  font-size: 24px;
+}
+
+/* FEATURED WORK */
+
+.img-thumbnail {
+  padding: 0px;
+  border: none;
+  border-radius:0;
+  -webkit-transition: none;
+  transition: none;
 }
 
 .hovereffect {
@@ -136,25 +171,25 @@ a:hover {
   width: calc(100% + 60px);
   -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
   transition: opacity 0.35s, transform 0.45s;
-  -webkit-transform: translate3d(-40px,0,0);
-  transform: translate3d(-40px,0,0);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
 }
 
 .hovereffect h2 {
   color: #fff;
-  font-size: 30px;
+  font-size: 36px;
   position: relative;
   background-color: transparent;
-  padding: 15% 0 10px 0;
+  padding: 10% 0 10px 0;
   text-align: center;
   text-transform: uppercase;
-  font-weight: 100;
+  font-weight: 700;
+  border-bottom: 1px solid #39CEBB;
 }
 
 .hovereffect p {
   margin-bottom: 30px;
-  font-size: 12px;
-  text-transform: uppercase;
+  font-size: 16px;
   font-weight: 100;
 }
 
@@ -188,7 +223,7 @@ a:hover {
 
 .hovereffect:hover img {
   opacity: 0.6;
-  filter: alpha(opacity=60);
+  filter: alpha(opacity=70);
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
 }
@@ -199,4 +234,10 @@ a:hover {
   filter: alpha(opacity=100);
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
+}
+
+/* FOOTER */
+
+.footer {
+  margin-top: 50px;
 }
