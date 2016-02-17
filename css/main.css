@@ -2,14 +2,7 @@
 
 body {
       font-family: "Roboto", serif;
-      min-height: 2000px;
       padding-top: 50px;
-      margin-bottom: 60px;
-      padding-bottom: 20px;
-}
-
-.row {
-  margin-bottom: 15px;
 }
 
 a {
@@ -45,6 +38,23 @@ a:hover {
   text-transform: uppercase;
   font-size: 11px;
   letter-spacing: 2px;
+}
+
+.btn-contactNav {
+  color: #b6b6b6 !important;
+  padding: 7px 20px !important;
+  background-color: transparent;
+  border: 1px solid #f6f6f6;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 2px;
+  margin-top: 6px;
+}
+
+.btn-contactNav:hover {
+  background-color: #39CEBB !important;
+  color: white !important;
 }
 
 .btn:hover {
@@ -85,14 +95,23 @@ a:hover {
 
 #quoteBox h3 {
   font-weight: 100;
-  font-size: 30px;
+}
+
+::-moz-selection { /* Code for Firefox */
+    background: #39CEBB;
+    color: white;
+}
+
+::selection {
+    background: #39CEBB;
+    color: white;
 }
 
 /* NAVBAR */
 
 .navbar-default {
   background-color: #fff;
-  border-color: #e6e6e6;
+  border-color: #f6f6f6;
 }
 
 .navbar-default .navbar-brand {
@@ -100,7 +119,7 @@ a:hover {
 }
 
 .navbar-default .navbar-nav li>a{
-  color: #333;
+  color: #b6b6b6;
 }
 
 .navbar-default .navbar-right li>a{
@@ -118,7 +137,6 @@ a:hover {
 
 .jumbotron h1 {
   color: #333;
-  font-size: 60px;
   line-height: 80px;
   text-align: left;
   font-weight: 100;
@@ -128,7 +146,13 @@ a:hover {
   color: #666;
   text-align: left;
   line-height: 60px;
-  font-size: 24px;
+}
+
+#jumbotronArrow {
+  color: #e6e6e6;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: -100px;
 }
 
 /* FEATURED WORK */
@@ -142,8 +166,8 @@ a:hover {
 }
 
 .hovereffect {
-  width: 100%%;
-  height: 100%%;
+  width: 100%;
+  height: 100%;
   float: left;
   overflow: hidden;
   position: relative;
@@ -160,7 +184,7 @@ a:hover {
   overflow: hidden;
   top: 0;
   left: 0;
-  padding: 3em;
+  padding: 1.5em;
   text-align: left;
 }
 
@@ -177,29 +201,28 @@ a:hover {
 
 .hovereffect h2 {
   color: #fff;
-  font-size: 36px;
+  font-size: 2em;
   position: relative;
   background-color: transparent;
-  padding: 10% 0 10px 0;
+  padding: 7% 0 5% 0;
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
-  border-bottom: 1px solid #39CEBB;
 }
 
 .hovereffect p {
-  margin-bottom: 30px;
-  font-size: 16px;
   font-weight: 100;
+  font-size: 1.15em;
+  padding-bottom: 5%;
 }
 
 .hovereffect .overlay:before {
   position: absolute;
-  top: 20px;
-  right: 20px;
-  bottom: 20px;
-  left: 20px;
-  border: 0px solid #fff;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
   content: '';
   opacity: 0;
   filter: alpha(opacity=0);
@@ -222,7 +245,7 @@ a:hover {
 }
 
 .hovereffect:hover img {
-  opacity: 0.6;
+  opacity: 0.8;
   filter: alpha(opacity=70);
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
@@ -239,5 +262,8 @@ a:hover {
 /* FOOTER */
 
 .footer {
-  margin-top: 50px;
+  background-color: #e6e6e6;
+  color: #808080;
+  padding-top:30px;
+  padding-bottom: 30px;
 }
