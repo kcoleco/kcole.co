@@ -65,20 +65,6 @@ p {
   padding-right: 30px;
 }
 
-.container-fluid#clientContainer {
-  padding-right: 0px;
-  padding-left: 0px;
-}
-
-#clientBox {
-  background-color: #e1e1e1;
-  color: #000;
-  text-align: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  margin-bottom: 30px;
-}
-
 ::-moz-selection { /* Code for Firefox */
     background: #39CEBB;
     color: white;
@@ -87,6 +73,26 @@ p {
 ::selection {
     background: #39CEBB;
     color: white;
+}
+
+/* BRAND BOX */
+
+#brandBox {
+  background-color: #f6f6f6;
+  color: #000;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.brandLogo {
+    opacity: .5;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.brandLogo:hover{
+    opacity: .8;
 }
 
 /* NAVBAR */
@@ -127,6 +133,17 @@ p {
 .navbar-default .navbar-right li>a:hover{
   color: #CCC;
   font-weight: 100;
+}
+
+.navbar-default .navbar-nav>.active>a {
+    color: #000;
+    background-color: #fff;
+    border-bottom: 3px solid #000;
+    height: 50px;
+}
+
+.navbar-default .navbar-nav>.active>a:hover {
+    background-color: #fff;
 }
 
 #contactLink {
